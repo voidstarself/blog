@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+  --bg: #0d0d0d;
+  --fg-alt: #ebdbb2;
+  --fg-main: #FAF9F6;
+  --fg-accent: #b9468f;
+  --fg-sub: #aaa;
+  --max-width: 700px;
+  --font: "Liberata", serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg-main);
+  font-family: var(--font);
+  line-height: 1.6;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  max-width: var(--max-width);
+  padding: 2rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.subtitle {
+  color: var(--fg-sub);
+  margin-top: -0.5rem;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  color: var(--fg-alt);
+  margin: 0 0.3rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: var(--fg-accent)
+}
+
+h1, h2, h3 {
+  color: var(--fg-main);
+  margin-top: 2rem;
+  line-height: 1.2;
+}
+
+h2 {
+    font-style: oblique;
+}
+
+h3 {
+    color: var(--fg-alt)
+}
+
+article {
+  margin-bottom: 2.5rem;
+}
+
+.meta {
+  color: var(--fg-sub);
+  font-size: 0.9rem;
+}
+
+a {
+  color: var(--fg-alt);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--fg-accent);
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 4rem;
+  color: var(--fg-sub);
+}
+
+#home-highlight {
+    background-color: #181818;
+    border: 1px solid var(--fg-main);
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+
+/* === Decorative rotating square before each h3 === */
+h3 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The square marker */
+h3::before {
+  content: "";
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: var(--fg-accent); /* default muted tone */
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  horizontal-align: middle;
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease;
+}
+
+/* Rotate + recolor on hover */
+h3:hover::before {
+  transform: rotate(45deg);
+  background-color: var(--fg-alt); /* highlight tone */
+}

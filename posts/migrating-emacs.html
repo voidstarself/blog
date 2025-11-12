@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>void</title>
+    <link rel="stylesheet" href="../theme.css">
+  </head>
+  <body>
+    <header>
+      <h1><span style="color: var(--fg-accent)">void</span> *<span style="color: var(--fg-alt)">self</span></h1>
+      <p class="subtitle">Notes on technical concepts so we can remember them later :)</p>
+      <nav>
+        <a href="/">Home</a> · 
+        <a href="/blog.html">Blog</a>
+      </nav>
+    </header>
+    <h2>Migrating from Emacs to Neovim</h2>
+    <p class="subtitle">Author: Nathan Tebbs</p>
+    <p class="subtitle">Published: September 17th, 2025</p>
+
+    <h3>Background</h3>
+
+    <p>Since starting the journey of customization within my personal development
+      environment, practicality has remained a strong priority. This is mainly because
+      I want to use what I work on, when I customize an editor's configuration (or any software
+      for that matter), it should only be to produce an experience, that the lack there of, is blocking progress on
+      getting work done.</p>
+
+    <p>This is the central philosophy I have implemented into any technical, or academic endevour
+      when it comes to the software that I use.</p>
+
+    <h3>Discovering Alternatives</h3>
+
+    <p>When I first learned how to really program in early High School I was introduced to the field
+      in a common way, Java with a industry standard IDE. For me, this was eclipse and java
+      was not unfamiliar territory. During my extra cirricular activities up until this point I had interacted with
+      Java in some capacity. However, this was the first time I had any kind of say in what toolchain I wanted to use.</p>
+
+    <p>At first, I tried to stick it out with the IDEs, especially since at the time I didn't even know
+      that it was possible to actually opt-out of the IDE experience for something more personal and custom.
+      Around this time is when I first discovered Neovim after playing around with configuring my stock window's terminal.</p>
+
+    <h3>The Land of Modal Text Editing</h3>
+
+    <p>I can't start the Neovim section without mentioning my primary inspiration and introduction to the topic: <a href="https://www.youtube.com/channel/UC8ENHE5xdFSwx71u3fDH5Xw">The Primeagen</a>.
+      Without discovering the Neovim community on YouTube and Reddit I would not have made it to the place I am today with my personal development environment. Please see the reference list at the bottom
+      for more information if you are interested in getting into Neovim</p>
+
+    <p>I can't really describe the feeling of customizing Neovim to produce an effect exactly the way you want, or how it feels to finally start feeling the benefit
+      of learning Vim bindings for editing text, which are in short some of the best feelings as a nerdy developer. However, I can speak on the long term effects of using the Neovim ecosystem in a serious capacity for programming.
+
+      <p><span style="font-weight: bold; text-decoration: underline">Slight disclaimer:</span> I am in now way disparaging the effectiveness of using Vim keybindings or using Neovim as your text editor of choice; I use and love Neovim almost daily. But, using Neovim as an IDE in the terminal has it's drawbacks.</p>
+      <p>The rate at which plugins evolve and different solutions to the same problem become the new hot thing is alarming. And as someone who wants to spend more time editing their config then watching peoples setups on YouTube this slowly made me tired
+      of the endless rabit holes that one can go down when this is the enviroment. So much so that I started looking for software to help me get my shit together and start organizing my tasks and life...</p>
+
+    <h3>Discovering Emacs (But First Org)</h3>
+
+    <p>I had heard of Emacs before but knew it didn't natively support my glorious Vim motions so I hadn't seriously considered using it. However, the state of my project management eventually
+      led me to discovering <a href="https://orgmode.org/manual/">org-mode</a>. Due to the Neovim ecosystem brainrot that had effected me up until this point, I immediately tried finding a org-mode
+      plugin for Neovim. While they do exist, I would watch people using org in Emacs and be left with a remaining feeling of disatisfaction. I didn't know this at the time but I believe the reason
+      why this solution was inadequate is due to a difference in philosophy between the two text editors I remember reading on Reddit:</p>
+
+    <ol>
+      <li><p style="color: var(--fg-accent)">"Neovim wants you to bring in external tools, and Emacs wants you to build them within."</p></li>
+    </ol>
+
+    <p>This feeling was the key for me behind making the jump, that and finding out I could keep my Vim motions alongside an intriguing distrobution of Emacs called <a href="https://github.com/doomemacs/doomemacs">Doom</a>.</p>
+
+    <h3>Where Did My Lua Go?</h3>
+
+    <p>Configuring Doom Emacs came with little learning curve, since like in most Neovim distrobutions Doom provides a custom framework like configuration system over top default Emacs. This comes with many benefit, however, this seems to be the primary one: built-in support for most programming/text editing features at your finger tips.
+    But, also like many Neovim distrobutions, Doom suffers much of the same drawbacks since you are somewhat forced by the community and authors to configure the text editor "their way", making custom alternatives to already existing configuration functions, for example:</p>
+
+        <ul>
+          <li>LSP</li>
+          <li>Auto Completion</li>
+          <li>Low Level Configuration/Customization</li>
+        </ul>
+
+    <p>This all isn't to say that Doom can't do these things. However, if your needs span slightly outside the scope of what the authors indended for the distrobution you are left using
+    their custom package configuration system, which might be another thing I would like to have a say in.</p>
+
+    <h3>Going Back To Basics</h3>
+
+  </body>
+</html>
