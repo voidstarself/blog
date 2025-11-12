@@ -1,3 +1,4 @@
+@import url('reset.css')
 @import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
@@ -6,7 +7,7 @@
   --fg-main: #FAF9F6;
   --fg-accent: #b9468f;
   --fg-sub: #aaa;
-  --max-width: 700px;
+  --max-width: 900px;
   --font: "Liberata", serif;
 }
 
@@ -118,4 +119,12 @@ h3::before {
 h3:hover::before {
   transform: rotate(45deg);
   background-color: var(--fg-alt); /* highlight tone */
+}
+
+
+/* Trying to disable the visual scoll bar TODO: check other browser(s) */
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
